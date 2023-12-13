@@ -3,6 +3,11 @@ use std::env;
 struct Solution {}
 
 impl Solution {
+    /// I think solution is a bit unusual. It "follows" indices and tries to
+    /// set the corresponding value for that index.
+    /// For example, [2, 3, 1] will be rewritten to [1, 2, 3].
+    /// If any value is not the expected value, it returns.
+    /// This should be an O(n) soln.
     pub fn first_missing_positive(nums: Vec<i32>) -> i32 {
         Solution::fmp(nums)
     }

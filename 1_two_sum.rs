@@ -3,6 +3,9 @@ use std::env;
 struct Solution {}
 
 impl Solution {
+    /// this is a pretty bad O(n^2) solution, there is an outer loop that
+    /// iterates on nums and an inner loop that iterates on nums after the
+    /// current iteration.
     pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
         let mut i: usize = 0;
         let mut j: usize = 1;

@@ -9,6 +9,10 @@ enum Direction {
 }
 
 impl Solution {
+    /// This does two sweeps, one right and one left.
+    /// On both sweeps, it tries to match peaks to a point that is equal or
+    /// higher on the other side.
+    /// Should be O(n).
     pub fn trap(height: Vec<i32>) -> i32 {
         Solution::trap_water(height)
     }
