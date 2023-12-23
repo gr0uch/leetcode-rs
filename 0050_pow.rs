@@ -1,5 +1,3 @@
-struct Solution;
-
 impl Solution {
     /// "binary search" approach
     /// O(logn)
@@ -24,6 +22,8 @@ impl Solution {
         result
     }
 }
+
+struct Solution;
 
 fn main() {
     println!("ans {:?}", Solution::my_pow(2.00000, -2147483648));
